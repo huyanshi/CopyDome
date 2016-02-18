@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A617B411576282A8D5637E3F350DA9E47BB41594",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "49ED487C90B33C733715E8BFFC7B91FF026418A8" : 0,
+    "A617B411576282A8D5637E3F350DA9E47BB41594" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8A781341-3385-4211-A348-5FE6F452D1E0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "49ED487C90B33C733715E8BFFC7B91FF026418A8" : "swiftScan\/",
+    "A617B411576282A8D5637E3F350DA9E47BB41594" : "CopyDome\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CopyDome",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CopyDome\/CopyDome.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MxABC\/swiftScan.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "49ED487C90B33C733715E8BFFC7B91FF026418A8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/huyanshi\/CopyDome.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A617B411576282A8D5637E3F350DA9E47BB41594"
+    }
+  ]
+}

@@ -14,6 +14,15 @@
 		90425D3F1C75533100616279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90425D3D1C75533100616279 /* LaunchScreen.storyboard */; };
 		90425D4A1C75533100616279 /* CopyDomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90425D491C75533100616279 /* CopyDomeTests.swift */; };
 		90425D551C75533100616279 /* CopyDomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90425D541C75533100616279 /* CopyDomeUITests.swift */; };
+		90A56E761C7594590036D074 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A56E751C7594590036D074 /* AVFoundation.framework */; };
+		90A56E831C7595F90036D074 /* LBXPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A56E7C1C7595F90036D074 /* LBXPermissions.swift */; };
+		90A56E841C7595F90036D074 /* LBXScanLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A56E7D1C7595F90036D074 /* LBXScanLineAnimation.swift */; };
+		90A56E851C7595F90036D074 /* LBXScanNetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A56E7E1C7595F90036D074 /* LBXScanNetAnimation.swift */; };
+		90A56E861C7595F90036D074 /* LBXScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A56E7F1C7595F90036D074 /* LBXScanView.swift */; };
+		90A56E871C7595F90036D074 /* LBXScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A56E801C7595F90036D074 /* LBXScanViewController.swift */; };
+		90A56E881C7595F90036D074 /* LBXScanViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A56E811C7595F90036D074 /* LBXScanViewStyle.swift */; };
+		90A56E891C7595F90036D074 /* LBXScanWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A56E821C7595F90036D074 /* LBXScanWrapper.swift */; };
+		90EBCCC11C75ABAE00C1EB45 /* CodeScan.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 90EBCCC01C75ABAE00C1EB45 /* CodeScan.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,15 @@
 		90425D501C75533100616279 /* CopyDomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CopyDomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90425D541C75533100616279 /* CopyDomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyDomeUITests.swift; sourceTree = "<group>"; };
 		90425D561C75533100616279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90A56E751C7594590036D074 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		90A56E7C1C7595F90036D074 /* LBXPermissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXPermissions.swift; sourceTree = "<group>"; };
+		90A56E7D1C7595F90036D074 /* LBXScanLineAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanLineAnimation.swift; sourceTree = "<group>"; };
+		90A56E7E1C7595F90036D074 /* LBXScanNetAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanNetAnimation.swift; sourceTree = "<group>"; };
+		90A56E7F1C7595F90036D074 /* LBXScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanView.swift; sourceTree = "<group>"; };
+		90A56E801C7595F90036D074 /* LBXScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanViewController.swift; sourceTree = "<group>"; };
+		90A56E811C7595F90036D074 /* LBXScanViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanViewStyle.swift; sourceTree = "<group>"; };
+		90A56E821C7595F90036D074 /* LBXScanWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanWrapper.swift; sourceTree = "<group>"; };
+		90EBCCC01C75ABAE00C1EB45 /* CodeScan.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CodeScan.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A56E761C7594590036D074 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +96,7 @@
 		90425D281C75533100616279 = {
 			isa = PBXGroup;
 			children = (
+				90A56E751C7594590036D074 /* AVFoundation.framework */,
 				90425D331C75533100616279 /* CopyDome */,
 				90425D481C75533100616279 /* CopyDomeTests */,
 				90425D531C75533100616279 /* CopyDomeUITests */,
@@ -97,6 +117,8 @@
 		90425D331C75533100616279 /* CopyDome */ = {
 			isa = PBXGroup;
 			children = (
+				90EBCCC01C75ABAE00C1EB45 /* CodeScan.bundle */,
+				90A56E7B1C7595F90036D074 /* Source */,
 				90425D341C75533100616279 /* AppDelegate.swift */,
 				90425D361C75533100616279 /* ViewController.swift */,
 				90425D381C75533100616279 /* Main.storyboard */,
@@ -123,6 +145,20 @@
 				90425D561C75533100616279 /* Info.plist */,
 			);
 			path = CopyDomeUITests;
+			sourceTree = "<group>";
+		};
+		90A56E7B1C7595F90036D074 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				90A56E7C1C7595F90036D074 /* LBXPermissions.swift */,
+				90A56E7D1C7595F90036D074 /* LBXScanLineAnimation.swift */,
+				90A56E7E1C7595F90036D074 /* LBXScanNetAnimation.swift */,
+				90A56E7F1C7595F90036D074 /* LBXScanView.swift */,
+				90A56E801C7595F90036D074 /* LBXScanViewController.swift */,
+				90A56E811C7595F90036D074 /* LBXScanViewStyle.swift */,
+				90A56E821C7595F90036D074 /* LBXScanWrapper.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +269,7 @@
 				90425D3F1C75533100616279 /* LaunchScreen.storyboard in Resources */,
 				90425D3C1C75533100616279 /* Assets.xcassets in Resources */,
 				90425D3A1C75533100616279 /* Main.storyboard in Resources */,
+				90EBCCC11C75ABAE00C1EB45 /* CodeScan.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +294,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90A56E881C7595F90036D074 /* LBXScanViewStyle.swift in Sources */,
+				90A56E841C7595F90036D074 /* LBXScanLineAnimation.swift in Sources */,
+				90A56E851C7595F90036D074 /* LBXScanNetAnimation.swift in Sources */,
 				90425D371C75533100616279 /* ViewController.swift in Sources */,
+				90A56E891C7595F90036D074 /* LBXScanWrapper.swift in Sources */,
+				90A56E831C7595F90036D074 /* LBXPermissions.swift in Sources */,
+				90A56E861C7595F90036D074 /* LBXScanView.swift in Sources */,
 				90425D351C75533100616279 /* AppDelegate.swift in Sources */,
+				90A56E871C7595F90036D074 /* LBXScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

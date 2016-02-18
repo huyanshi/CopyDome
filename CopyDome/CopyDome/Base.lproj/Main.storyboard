@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCo-yu-dQn">
-                                <rect key="frame" x="520" y="114" width="30" height="30"/>
+                                <rect key="frame" x="520" y="109" width="30" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="复制">
@@ -36,35 +37,73 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="测试粘贴" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JKL-5u-7Bk">
-                                <rect key="frame" x="30" y="234.5" width="200" height="30"/>
+                                <rect key="frame" x="30" y="234" width="200" height="30"/>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="Cpy-eP-meZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="f05-QB-VXN"/>
+                                    <constraint firstAttribute="width" constant="200" id="sLd-yo-jPy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="填写快递单号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vox-o1-dYu">
+                                <rect key="frame" x="30" y="314" width="200" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="XYV-Og-5gS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJk-nu-AY0">
+                                <rect key="frame" x="520" y="315" width="30" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="扫描">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="inputAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NFP-fL-4of"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sCo-yu-dQn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="D3U-3f-5nB"/>
-                            <constraint firstItem="JKL-5u-7Bk" firstAttribute="top" secondItem="riL-mz-rnE" secondAttribute="bottom" constant="100" id="QA8-qd-fdC"/>
-                            <constraint firstItem="riL-mz-rnE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="QJz-SB-563"/>
-                            <constraint firstItem="JKL-5u-7Bk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="RlI-KK-i0h"/>
-                            <constraint firstItem="riL-mz-rnE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Rze-qZ-qd4"/>
-                            <constraint firstAttribute="trailing" secondItem="sCo-yu-dQn" secondAttribute="trailing" constant="50" id="c9r-1a-prd"/>
+                            <constraint firstItem="fJk-nu-AY0" firstAttribute="centerX" secondItem="sCo-yu-dQn" secondAttribute="centerX" id="0o1-zF-Jd2"/>
+                            <constraint firstItem="JKL-5u-7Bk" firstAttribute="top" secondItem="riL-mz-rnE" secondAttribute="bottom" constant="100" id="2N8-pU-rHg"/>
+                            <constraint firstItem="fJk-nu-AY0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4VL-pK-Gn6"/>
+                            <constraint firstItem="Vox-o1-dYu" firstAttribute="top" secondItem="JKL-5u-7Bk" secondAttribute="bottom" constant="50" id="9ya-pF-2HT"/>
+                            <constraint firstItem="riL-mz-rnE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="AZA-FV-nyw"/>
+                            <constraint firstItem="Vox-o1-dYu" firstAttribute="leading" secondItem="riL-mz-rnE" secondAttribute="leading" id="EgY-ok-BIv"/>
+                            <constraint firstItem="JKL-5u-7Bk" firstAttribute="leading" secondItem="riL-mz-rnE" secondAttribute="leading" id="HCC-bU-HWW"/>
+                            <constraint firstItem="Vox-o1-dYu" firstAttribute="height" secondItem="JKL-5u-7Bk" secondAttribute="height" id="WwT-Xm-N60"/>
+                            <constraint firstItem="fJk-nu-AY0" firstAttribute="centerY" secondItem="Vox-o1-dYu" secondAttribute="centerY" id="d2W-6c-1v9"/>
+                            <constraint firstItem="riL-mz-rnE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="elF-ta-gMa"/>
+                            <constraint firstItem="sCo-yu-dQn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="480" id="fya-xh-Q6B"/>
+                            <constraint firstItem="Vox-o1-dYu" firstAttribute="width" secondItem="JKL-5u-7Bk" secondAttribute="width" id="iJu-M9-xsS"/>
+                            <constraint firstItem="fJk-nu-AY0" firstAttribute="centerY" secondItem="Vox-o1-dYu" secondAttribute="centerY" id="isN-Ao-q9q"/>
+                            <constraint firstAttribute="trailing" secondItem="sCo-yu-dQn" secondAttribute="trailing" constant="50" id="sqh-Po-ZDC"/>
+                            <constraint firstItem="sCo-yu-dQn" firstAttribute="centerY" secondItem="riL-mz-rnE" secondAttribute="centerY" id="vUm-6N-CLJ"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fya-xh-Q6B"/>
+                                <exclude reference="4VL-pK-Gn6"/>
+                                <exclude reference="d2W-6c-1v9"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="ewX-K7-sty"/>
                     <connections>
                         <outlet property="copyLabel" destination="riL-mz-rnE" id="hm9-g1-4Go"/>
+                        <outlet property="inputNumTextField" destination="Vox-o1-dYu" id="vI2-re-vJS"/>
                         <outlet property="stickTextField" destination="JKL-5u-7Bk" id="01t-CC-Dz0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1117" y="429"/>
+            <point key="canvasLocation" x="1374" y="417"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8J0-pR-4uU">
